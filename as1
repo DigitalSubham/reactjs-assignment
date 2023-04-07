@@ -25,7 +25,8 @@ Emmet is widely used by web developers and is an essential tool for anyone looki
 A library and a framework are both software development tools, but they differ in their approach to solving development problems and how they are used.
 
 A library is a collection of reusable code that can be called upon to perform specific tasks. 
-A library provides a set of functions or classes that can be called from a program to perform a specific task. For example, a library might provide functions for sorting arrays, parsing XML, or creating graphics.
+A library provides a set of functions or classes that can be called from a program to perform a specific task. 
+For example, a library might provide functions for sorting arrays, parsing XML, or creating graphics.
 
 A framework, on the other hand, is a more comprehensive set of tools and conventions that dictate the structure and organization of an application. 
 A framework provides a set of rules and guidelines that developers must follow when building an application. 
@@ -93,12 +94,14 @@ The "crossorigin" attribute in a script tag is used to specify whether the brows
 It is used as a security measure to prevent cross-site scripting attacks (XSS) and to protect user data.
 
 When a script is loaded from a different domain than the one hosting the web page, the browser considers it a "cross-origin" request. 
-By default, the browser blocks scripts from being executed when they are loaded from a different origin. However, if the script has the "crossorigin" attribute set, the browser will allow the script to be loaded and executed 
+By default, the browser blocks scripts from being executed when they are loaded from a different origin. 
+However, if the script has the "crossorigin" attribute set, the browser will allow the script to be loaded and executed 
 if the server hosting the script sends the appropriate CORS (Cross-Origin Resource Sharing) headers indicating that the script is safe to use.
 
 The "crossorigin" attribute can have three possible values: "anonymous", "use-credentials", and an empty value. 
 If the attribute is set to "anonymous", the browser will not send any credentials (such as cookies or authentication tokens) with the request. 
-If it is set to "use-credentials", the browser will include credentials with the request. If the attribute is not set or has an empty value, the browser will use its default behavior, which may vary depending on the browser.
+If it is set to "use-credentials", the browser will include credentials with the request. 
+If the attribute is not set or has an empty value, the browser will use its default behavior, which may vary depending on the browser.
 
 Overall, the "crossorigin" attribute is an important security feature that helps protect web users from malicious scripts and other security threats.
 
@@ -145,8 +148,8 @@ you would use the react.production.js file to optimize performance and reduce th
 
 ● What is async and defer? - see my Youtube video ;)
 
-Both the async and defer attributes are used in HTML script tags to load external scripts asynchronously and improve page loading performance. However, 
-they function differently and have different use cases.
+Both the async and defer attributes are used in HTML script tags to load external scripts asynchronously and improve page loading performance. 
+However, they function differently and have different use cases.
 
 async attribute: The async attribute tells the browser to load the script asynchronously, 
 meaning that it will continue loading the rest of the page while the script is being downloaded in the background. 
@@ -172,7 +175,8 @@ Loading scripts that do not have any dependencies on other scripts or the page's
 
 
 Use defer when:
-Including scripts that need to be executed after the page's content has finished loading and rendering (e.g. scripts that manipulate the DOM or modify the page's content).
+Including scripts that need to be executed after the page's content has finished loading and rendering 
+(e.g. scripts that manipulate the DOM or modify the page's content).
 Loading scripts that have dependencies on other scripts or the page's content and need to be executed in a specific order.
 Including scripts that might cause conflicts or errors if they are executed before the page's content is fully loaded.
 In general, it's a good practice to use async and defer when loading scripts to improve page loading performance and avoid blocking the page's 
@@ -187,7 +191,8 @@ loaded and to test the page's performance and functionality after making any cha
 
 
 Coding -
-● Set up all the tools in your laptop ○ VS Code
+● Set up all the tools in your laptop 
+○ VS Code
 ○ Chrome
 ○ Extensions of Chrome
 ● Create a new Git repo
