@@ -1,18 +1,19 @@
-Theory -
-● What is Emmet?
+# Theory Assignments
 
+## What is Emmet?
 Emmet is a productivity tool for web developers that allows them to write HTML and CSS code more quickly and efficiently. 
 It is a plugin that can be used with popular code editors like Visual Studio Code, Sublime Text, and Atom.
 
 Emmet uses abbreviations to expand into HTML or CSS code. 
 For example, if you type ul>li*3>a and then press the Emmet shortcut key, it will expand into:
 
+```
 <ul>
   <li><a href=""></a></li>
   <li><a href=""></a></li>
   <li><a href=""></a></li>
 </ul>
-
+```
 
 This saves time and reduces the chances of errors when writing code. 
 Emmet also has many other features, such as the ability to generate Lorem Ipsum text, create CSS rules with shorthand syntax, and more.
@@ -20,7 +21,7 @@ Emmet also has many other features, such as the ability to generate Lorem Ipsum 
 Emmet is widely used by web developers and is an essential tool for anyone looking to increase their productivity and efficiency when writing HTML and CSS code.
 
 
-● Difference between a Library and Framework?
+## Difference between a Library and Framework?
 
 A library and a framework are both software development tools, but they differ in their approach to solving development problems and how they are used.
 
@@ -33,9 +34,7 @@ A framework provides a set of rules and guidelines that developers must follow w
 It often includes libraries and tools that can be used to implement specific features or functionalities.
 
 
-
-
-● What is CDN? Why do we use it?
+## What is CDN? Why do we use it?
 
 CDN stands for Content Delivery Network. It is a system of distributed servers that deliver web content to users based on their geographic location. 
 The primary purpose of a CDN is to reduce latency, improve website performance, and provide a better user experience.
@@ -53,7 +52,7 @@ Cost-effectiveness: By offloading content delivery to a CDN, websites can reduce
 
 Global reach: CDNs have servers located all around the world, making it easier for websites to serve content to users in different geographic locations.
 
-***How CDN Works?
+## How CDN Works?
 
 The CDN server that receives the request then checks to see if it has a cached copy of the requested resource. 
 If it does, it delivers the cached copy to the user's browser, which reduces the time it takes to load the resource.
@@ -68,9 +67,7 @@ This helps to ensure that no single server is overloaded with traffic, which can
 CDNs also often use advanced caching techniques, such as edge caching and dynamic caching, to further improve performance and reduce the load on origin servers.
 
 
-
-
-● Why is React known as React?
+## Why is React known as React?
 React is known as React because it is built around the concept of "reacting" to changes in a web application's user interface. 
 The framework was initially developed by Facebook in 2011 for internal use and was called "FaxJS" at the time. 
 It was later released to the public in 2013 under the name "React."
@@ -84,11 +81,7 @@ This process is known as "reconciliation," and it allows React to update the UI 
 In summary, React is known as React because it is built around the concept of reacting to changes in a web application's UI. 
 Its use of a virtual DOM and efficient updating mechanisms make it a popular choice for building fast, dynamic, and responsive web applications.
 
-
-
-
-
-● What is crossorigin in script tag?
+## What is crossorigin in script tag?
 
 The "crossorigin" attribute in a script tag is used to specify whether the browser should allow scripts from different domains to be executed on a web page. 
 It is used as a security measure to prevent cross-site scripting attacks (XSS) and to protect user data.
@@ -108,7 +101,7 @@ Overall, the "crossorigin" attribute is an important security feature that helps
 
 
 
-● What is diference between React and ReactDOM?
+## What is diference between React and ReactDOM?
 
 React and ReactDOM are two different libraries in the React ecosystem, each with its own distinct role:
 
@@ -127,7 +120,7 @@ While they work closely together, they serve different purposes and are often us
 
 
 
-● What is difference between react.development.js and react.production.js files via CDN?
+## What is difference between react.development.js and react.production.js files via CDN?
 
 The difference between the react.development.js and react.production.js files via CDN lies in how they are optimized for development and production environments, respectively.
 
@@ -146,7 +139,7 @@ you would use the react.production.js file to optimize performance and reduce th
 
 
 
-● What is async and defer? - see my Youtube video ;)
+## What is async and defer? - see my Youtube video ;)
 
 Both the async and defer attributes are used in HTML script tags to load external scripts asynchronously and improve page loading performance. 
 However, they function differently and have different use cases.
@@ -190,23 +183,24 @@ loaded and to test the page's performance and functionality after making any cha
 
 
 
-Coding -
-● Set up all the tools in your laptop 
-○ VS Code
-○ Chrome
-○ Extensions of Chrome
-● Create a new Git repo
+# Coding Assignments
+- Set up all the tools in your laptop
+- VS Code
+- Chrome
+- Extensions of Chrome
+- Create a new Git repo
 
 
-● Build your first Hello World program using, 
-  ○ Using just HTML
-  ○ Using JS to manipulate the DOM 
-  ○ Using React
-    ■ use CDN Links
-    ■ Create an Element
-    ■ Create nested React Elements
-    ■ Use root.render
+- Build your first Hello World program using, 
+  - Using just HTML
+  - Using JS to manipulate the DOM
+  - Using React
+    - use CDN Links
+    - Create an Element
+    - Create nested React Elements
+    - Use root.render
     
+```
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -231,6 +225,7 @@ Coding -
       crossorigin
       src="https://unpkg.com/react@18/umd/react.development.js"
     ></script>
+
     <script
       crossorigin
       src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
@@ -239,7 +234,8 @@ Coding -
   </body>
 </html>
 
-
+```
+```
 //app.js file starts
 
 // creating h1 elemnt using react
@@ -277,8 +273,5 @@ console.log(heading);
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 //passing a react element inside the root
-
-//async defer
 root.render(container); //rendering
-
-    
+```
